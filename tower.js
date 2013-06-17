@@ -4,7 +4,9 @@ var Tower = function(num){
 	that.towers = [[], [], []];
 
 	var filler = function(num) {
-		for (var i = 1; i <= num; i++) { that.towers[0][i - 1] = i; }
+		for (var i = 0; i < num; i++) {
+			that.towers[0][i] = i + 1;
+		}
 	};
 
 	filler(num);
